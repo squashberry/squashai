@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07080c">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="SquashAI is a private offline AI that runs directly on your device. Download one local model, keep your chats private, and use AI without an online AI service.">
+  <meta property="og:title" content="SquashAI — AI that stays on your device.">
+  <meta property="og:description" content="A private, offline AI by Squashberry. One model at a time. No online AI fallback.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://squashberry.github.io/squashai/">
+  <meta property="og:image" content="https://squashberry.github.io/squashai/logo.svg">
+  <title>SquashAI — AI that stays on your device.</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="SquashAI home">
+        <img src="logo.svg" alt="" class="brand-logo">
+        <span class="brand-copy"><strong>SquashAI</strong><small>by Squashberry</small></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#why">Why SquashAI</a>
+        <a href="#models">Models</a>
+        <a href="#experience">Experience</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Toggle theme">◐</button>
+        <a class="top-cta" href="#download">Get SquashAI <span>↗</span></a>
+        <button class="menu-button" id="menuButton" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#why">Why SquashAI</a>
+      <a href="#models">Models</a>
+      <a href="#experience">Experience</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#faq">FAQ</a>
+      <a class="mobile-cta" href="#download">Get SquashAI</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="shell hero-shell">
+        <div class="hero-copy reveal">
+          <div class="eyebrow-pill"><span class="live-dot"></span> PRIVATE • OFFLINE • LOCAL</div>
+          <h1>AI that stays<br><span class="gradient-text">with you.</span></h1>
+          <p class="hero-lead">
+            SquashAI is a pocket AI that runs directly on your phone.
+            No online AI fallback. No sending your chat to a remote AI service.
+            Choose a model, keep one downloaded, and talk to your own local assistant.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#download">Explore SquashAI <span>↗</span></a>
+            <a class="btn btn-secondary" href="#models">See the models</a>
+          </div>
+          <div class="hero-meta">
+            <span><b>Local inference</b> on-device</span>
+            <span><b>One model</b> at a time</span>
+            <span><b>System / light / dark</b> themes</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1" aria-label="SquashAI app preview">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+
+          <div class="phone phone-back">
+            <div class="phone-screen dark-ui">
+              <div class="phone-status"><span>9:41</span><span>⌁ 100%</span></div>
+              <div class="mini-head"><b>SquashAI</b><span>•••</span></div>
+              <div class="model-chip"><span class="mini-dot"></span> SquashAI Lite</div>
+              <div class="chat-stack">
+                <div class="bubble user-bubble small-bubble">Explain local AI in simple terms.</div>
+                <div class="bubble ai-bubble">
+                  Think of it as an AI model living on your phone instead of talking to a remote AI service.
+                </div>
+              </div>
+              <div class="composer"><span>Message SquashAI…</span><i>↑</i></div>
+            </div>
+          </div>
+
+          <div class="phone phone-main">
+            <div class="phone-screen light-ui">
+              <div class="phone-status"><span>9:41</span><span>⌁ 100%</span></div>
+              <div class="mini-head"><b>SquashAI</b><span class="spark">✦</span></div>
+
+              <div class="chat-title-row">
+                <div><small>LOCAL MODEL</small><strong>Nano 1</strong></div>
+                <span class="state-pill">READY</span>
+              </div>
+
+              <div class="chat-stack">
+                <div class="bubble user-bubble">Who are you?</div>
+                <div class="bubble ai-bubble">
+                  I'm SquashAI — a private AI created by Squashberry, running directly on this device.
+                </div>
+                <div class="bubble user-bubble">What can you do offline?</div>
+                <div class="bubble ai-bubble">Chat, explain, brainstorm, summarize, write and help — using your downloaded local model.</div>
+              </div>
+
+              <div class="composer light-composer"><span>Ask SquashAI anything…</span><i>↑</i></div>
+            </div>
+          </div>
+
+          <div class="float-card model-float">
+            <div class="float-icon">AI</div>
+            <div><small>MODEL</small><strong>One model installed</strong><span>Ready for local inference</span></div>
+          </div>
+
+          <div class="float-card privacy-float">
+            <div class="float-icon shield">⌾</div>
+            <div><small>PRIVACY</small><strong>Running on device</strong><span>Offline by design</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <div class="ticker-track">
+        <span>LOCAL AI</span><i>•</i><span>QWEN3 GGUF</span><i>•</i><span>ANDROID FIRST</span><i>•</i><span>ONE MODEL AT A TIME</span><i>•</i><span>BUILT BY SQUASHBERRY</span><i>•</i>
+      </div>
+    </section>
+
+    <section id="why" class="section section-soft">
+      <div class="shell">
+        <div class="section-head reveal">
+          <span class="eyebrow">WHY SQUASHAI</span>
+          <h2>AI without the feeling that<br><span class="gradient-text">your phone is a terminal.</span></h2>
+          <p>SquashAI keeps the experience familiar and polished while making the model itself local. The website mirrors the product: calm, dark, precise and phone-first.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card large reveal">
+            <div class="card-number">01</div>
+            <div class="feature-icon">⌁</div>
+            <h3>Private by architecture</h3>
+            <p>Your conversation is generated by the model installed on your device. SquashAI does not need an online AI provider to answer you.</p>
+            <div class="feature-line"></div>
+            <span class="feature-tag">OFFLINE AI</span>
+          </article>
+
+          <article class="feature-card reveal delay-1">
+            <div class="card-number">02</div>
+            <div class="feature-icon">▣</div>
+            <h3>One model, not six copies</h3>
+            <p>You can choose a smaller supported model on purpose. Switching replaces the current completed model instead of filling your storage with every tier.</p>
+            <span class="feature-tag">SMART STORAGE</span>
+          </article>
+
+          <article class="feature-card reveal delay-2">
+            <div class="card-number">03</div>
+            <div class="feature-icon">↔</div>
+            <h3>Recommended does not mean required</h3>
+            <p>SquashAI can recommend a model for your device while still letting you pick any lower model your device supports.</p>
+            <span class="feature-tag">YOUR CHOICE</span>
+          </article>
+
+          <article class="feature-card wide reveal">
+            <div class="feature-copy">
+              <div class="card-number">04</div>
+              <div class="feature-icon">✦</div>
+              <h3>Designed for a real phone</h3>
+              <p>Chat bubbles, smooth transitions, model cards, theme-aware surfaces and a focused mobile layout — made to feel like a product, not a debug screen.</p>
+            </div>
+            <div class="mini-demo">
+              <div class="mini-demo-top"><span>SquashAI</span><small>LOCAL</small></div>
+              <div class="mini-msg user">Can you summarize this?</div>
+              <div class="mini-msg assistant">Absolutely. Send it over.</div>
+              <div class="mini-msg assistant typing"><span></span><span></span><span></span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="models" class="section">
+      <div class="shell">
+        <div class="section-head split-head reveal">
+          <div>
+            <span class="eyebrow">LOCAL MODELS</span>
+            <h2>Six tiers.<br><span class="gradient-text">One active at a time.</span></h2>
+          </div>
+          <p>The app evaluates device memory and free storage, recommends a balance, and keeps unsupported tiers locked. You can still deliberately choose a lower supported model.</p>
+        </div>
+
+        <div class="model-rail reveal">
+          <article class="model-card">
+            <span class="model-index">01</span><div class="model-badge">ULTRA-LIGHT</div>
+            <h3>Nano 1</h3><strong>0.6B</strong><p>Smallest footprint for phones with limited resources.</p>
+            <div class="model-spec"><span>~397 MB</span><span>Q4_K_M</span></div>
+          </article>
+          <article class="model-card">
+            <span class="model-index">02</span><div class="model-badge">NANO</div>
+            <h3>Nano 2.0</h3><strong>0.6B</strong><p>A little more quality with a modest storage increase.</p>
+            <div class="model-spec"><span>~551 MB</span><span>Q5_K_M</span></div>
+          </article>
+          <article class="model-card featured">
+            <span class="model-index">03</span><div class="model-badge">EVERYDAY</div>
+            <h3>Lite</h3><strong>1.7B</strong><p>Balanced local assistant for everyday conversations.</p>
+            <div class="model-spec"><span>~1.28 GB</span><span>Q4_K_M</span></div>
+          </article>
+          <article class="model-card">
+            <span class="model-index">04</span><div class="model-badge">MEDIUM</div>
+            <h3>Medium 1</h3><strong>4B</strong><p>More capability for devices with more memory.</p>
+            <div class="model-spec"><span>~2.5 GB</span><span>Q4_K_M</span></div>
+          </article>
+          <article class="model-card">
+            <span class="model-index">05</span><div class="model-badge">MEDIUM</div>
+            <h3>Medium 2</h3><strong>8B</strong><p>A larger local model with a substantially higher footprint.</p>
+            <div class="model-spec"><span>~5.03 GB</span><span>Q4_K_M</span></div>
+          </article>
+          <article class="model-card">
+            <span class="model-index">06</span><div class="model-badge">MAX</div>
+            <h3>Ultra</h3><strong>14B</strong><p>The largest current SquashAI tier for very capable devices.</p>
+            <div class="model-spec"><span>~9 GB</span><span>Q4_K_M</span></div>
+          </article>
+        </div>
+
+        <div class="model-note reveal">
+          <div class="note-icon">i</div>
+          <div><strong>How selection works</strong><p>Your device gets a recommendation, but supported lower tiers remain selectable. A model above the device threshold stays unavailable.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-soft">
+      <div class="shell experience-grid">
+        <div class="experience-copy reveal">
+          <span class="eyebrow">THE EXPERIENCE</span>
+          <h2>A local model,<br><span class="gradient-text">without the rough edges.</span></h2>
+          <p>SquashAI is built around the small interactions that make a mobile AI feel good: clear model state, readable bubbles, fast transitions, and a focused composer.</p>
+
+          <div class="experience-list">
+            <div><span>01</span><div><b>Choose a model</b><small>Browse the standing model cards and select the tier that fits your device.</small></div></div>
+            <div><span>02</span><div><b>Download once</b><small>The verified model becomes the active local AI after the download completes.</small></div></div>
+            <div><span>03</span><div><b>Chat locally</b><small>Ask questions, write, summarize and brainstorm without an online AI backend.</small></div></div>
+          </div>
+        </div>
+
+        <div class="chat-showcase reveal delay-1">
+          <div class="showcase-top"><span>SquashAI</span><small>LOCAL SESSION</small></div>
+          <div class="showcase-body">
+            <div class="showcase-time">TODAY</div>
+            <div class="bubble user-bubble">Give me a 5-line explanation of photosynthesis.</div>
+            <div class="bubble ai-bubble">
+              Plants use light energy to make food.<br>
+              Chlorophyll captures that light.<br>
+              Water and carbon dioxide are the raw materials.<br>
+              Glucose stores the chemical energy.<br>
+              Oxygen is released as a by-product.
+            </div>
+            <div class="bubble user-bubble">Make it even simpler.</div>
+            <div class="bubble ai-bubble accent">Sunlight + water + carbon dioxide → plant food + oxygen.</div>
+          </div>
+          <div class="showcase-composer"><span>Message SquashAI…</span><button>↑</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy" class="section">
+      <div class="shell privacy-panel reveal">
+        <div class="privacy-copy">
+          <span class="eyebrow">OFFLINE BY DESIGN</span>
+          <h2>Your AI can feel personal<br><span class="gradient-text">without being online.</span></h2>
+          <p>SquashAI is intentionally different from cloud-only assistants. The local model lives in the app's storage and inference happens on the phone.</p>
+        </div>
+        <div class="privacy-points">
+          <div><span>01</span><div><b>No online AI fallback</b><small>When no local model is installed, the app asks you to install one.</small></div></div>
+          <div><span>02</span><div><b>Verified downloads</b><small>Model downloads can be checked before they become active.</small></div></div>
+          <div><span>03</span><div><b>One completed model</b><small>Switching models makes the previous local model unavailable on the device.</small></div></div>
+          <div><span>04</span><div><b>Your settings remain</b><small>Changing the model does not wipe your chats or app preferences.</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section-soft">
+      <div class="shell faq-grid">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>The important bits,<br><span class="gradient-text">without the fine-print maze.</span></h2>
+          <p>SquashAI is still an actively developed product, so the website focuses on the architecture and experience rather than pretending every feature is finished.</p>
+        </div>
+        <div class="faq-list reveal delay-1">
+          <details open><summary>Does SquashAI use online AI?</summary><p>No. The current product direction is offline-only local inference. There is no online AI fallback.</p></details>
+          <details><summary>Can I choose a lower model than the recommendation?</summary><p>Yes. The recommendation is only a suggestion. Any model that passes the device's supported RAM and storage thresholds can remain selectable.</p></details>
+          <details><summary>Can I install all six models?</summary><p>The app is designed to keep one completed local model at a time. Switching models replaces the active model rather than keeping all six.</p></details>
+          <details><summary>What happens if my phone cannot run a model?</summary><p>That tier is shown as unavailable and the app can explain the device requirement instead of allowing an unsafe download.</p></details>
+          <details><summary>Is SquashAI only for Android?</summary><p>The current MVP is being validated on Android first. The local runtime architecture is being kept portable for future iOS work.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="section download-section">
+      <div class="shell download-card reveal">
+        <div>
+          <span class="eyebrow">SQUASHBERRY</span>
+          <h2>Meet your local AI.<br><span class="gradient-text">No cloud required.</span></h2>
+          <p>SquashAI is being built as a polished, private, offline assistant for real phones — one model, one device, one conversation at a time.</p>
+        </div>
+        <div class="download-actions">
+          <a class="btn btn-primary" href="https://github.com/squashberry/squashai" target="_blank" rel="noreferrer">View the project <span>↗</span></a>
+          <a class="btn btn-secondary" href="#models">Explore models</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-top">
+      <a class="brand" href="#top">
+        <img src="logo.svg" alt="" class="brand-logo">
+        <span class="brand-copy"><strong>SquashAI</strong><small>by Squashberry</small></span>
+      </a>
+      <div class="footer-links">
+        <a href="#why">Why SquashAI</a>
+        <a href="#models">Models</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://github.com/squashberry/squashai" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+    <div class="shell footer-bottom">
+      <span>© 2026 Squashberry. SquashAI is a local AI project.</span>
+      <span>Built for phones. Designed to stay yours.</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
